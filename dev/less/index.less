@@ -1,0 +1,102 @@
+.slots-container {
+    width: 384px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../image/bg.jpg') center no-repeat;
+    box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.2);
+
+    &-btn {
+        position: absolute;
+        top: 479px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100px;
+        height: 60px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+    }
+
+    .superheros {
+        width: 355px;
+        height: 210px;
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 3px;
+        overflow: hidden;
+        background: -webkit-linear-gradient(top, rgb(45, 45, 45) 0, #fff 50%, rgb(45, 45, 45) 100%);
+
+        &-list01,
+        &-list02,
+        &-list03 {
+            width: 110px;
+            position: absolute; // top: -60px;
+            left: 0;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &-list02 {
+            left: 123px;
+        }
+
+        &-list03 {
+            left: 245px;
+        }
+    }
+}
+
+
+.scratch {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // border: 5px solid #333;
+    border-radius: 5px;
+    font-size: 0;
+
+    &-card {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+    }
+
+    &-change {
+        height: 20px;
+        margin-top: 10px;
+        font-size: 0;
+
+        input {
+            display: inline-block;
+            width: 120px;
+            height: 20px;
+            vertical-align: top;
+            border: 1px solid #666;
+            line-height: 48px;
+            padding-left: 10px;
+        }
+
+        button {
+            vertical-align: top;
+            display: inline-block;
+            width: 70px;
+            height: 24px;
+            margin-left: 10px;
+            background: #666;
+            background: #999;
+            font-size: 12px;
+            border:0;
+            color:#fff;
+        }
+    }
+}

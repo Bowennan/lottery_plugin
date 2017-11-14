@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>scratch_card</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="scratch">
+            <!-- 绘制容器 -->
+            <div class="scratch-card" id="scratchCard"></div>
+            <!-- 方法容器 -->
+            <div class="scratch-change">
+                <input id="scratch_input" type="text" name="">
+                <button id="scratch_btn">再来一次</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/js/scratchCard.js"></script>
+    <script type="text/javascript">
+    var SC_btn   = document.getElementById('scratch_btn');
+    var SC_input = document.getElementById('scratch_input');
+
+    // 实例化事例
+    var Card = new ScratchCard({
+        containerId: 'scratchCard',
+        resultKlass: 'xxx',
+        defaultText: '谢谢惠顾！'
+    });
+
+    // 实例化方法调用事例
+    SC_btn.addEventListener('click', function() {
+        var SC_input_value = SC_input.value ? SC_input.value : '再来一次';
+        Card.refreshMask(); //重绘
+        Card.changeResult(SC_input_value); //设置内容
+    })
+    </script>
+</body>
+
+</html>

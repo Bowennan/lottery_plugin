@@ -1,0 +1,100 @@
+/*前端组--南海波*/
+.slots-container {
+  width: 384px;
+  height: 640px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url('../image/bg.jpg') center no-repeat;
+  -webkit-box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.slots-container-btn {
+  position: absolute;
+  top: 479px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+.slots-container .superheros {
+  width: 355px;
+  height: 210px;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 3px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(top, #2d2d2d 0, #fff 50%, #2d2d2d 100%);
+}
+.slots-container .superheros-list01,
+.slots-container .superheros-list02,
+.slots-container .superheros-list03 {
+  width: 110px;
+  position: absolute;
+  left: 0;
+}
+.slots-container .superheros-list01 img,
+.slots-container .superheros-list02 img,
+.slots-container .superheros-list03 img {
+  display: block;
+  width: 100%;
+}
+.slots-container .superheros-list02 {
+  left: 123px;
+}
+.slots-container .superheros-list03 {
+  left: 245px;
+}
+
+
+.scratch {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-size: 0;
+}
+.scratch-card {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+.scratch-change {
+  height: 20px;
+  margin-top: 10px;
+  font-size: 0;
+}
+.scratch-change input {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  vertical-align: top;
+  border: 1px solid #666;
+  line-height: 48px;
+  padding-left: 10px;
+}
+.scratch-change button {
+  vertical-align: top;
+  display: inline-block;
+  width: 70px;
+  height: 24px;
+  margin-left: 10px;
+  background: #666;
+  background: #999;
+  font-size: 12px;
+  border: 0;
+  color: #fff;
+}
